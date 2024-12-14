@@ -1,0 +1,29 @@
+select cp.product_id, cp.title,cp.sku, fmfile.uri as file_uri, fmfile.filename as pdf_name, fmimg.uri as image_uri, fmimg.filename as image_name, ptype.field_product_type_value as packet_type
+from commerce_product cp
+join field_data_field_product_image img on img.entity_id = cp.product_id
+join field_data_field_purchaseable_file pfile on pfile.entity_id = cp.product_id
+join file_managed fmfile on fmfile.fid = pfile.field_purchaseable_file_fid
+join file_managed fmimg on fmimg.fid = img.field_product_image_fid
+join field_data_field_product_type ptype on ptype.entity_id = cp.product_id
+
+Google Fonts
+Rozha One
+Chonburi
+libre bodoni
+Elsie
+Purple Purse
+
+Hatch patch font color
+#365b5a
+
+
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 07' WHERE `pdfs_and_enclosed`.`sku` = 'bw_aof_07';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 08 and 09' WHERE `pdfs_and_enclosed`.`sku` = 'bw_aof_08_09';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 01' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_01';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 02' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_02';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 03' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_03';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 04' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_04';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 05' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_05';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 06' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_06';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 07' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_07';
+UPDATE `pdfs_and_enclosed` SET `sort_title` = 'article of faith 08 and 09' WHERE `pdfs_and_enclosed`.`sku` = 'color_aof_08_09';

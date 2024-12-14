@@ -1,0 +1,2 @@
+<p>These are provided <strong></strong>free of charge</strong> and are <strong>not to be resold or modified</strong> but <strong><em>must include a link to where the files can be found</em></strong>. The copyright for <em>packets</em> are still owned by <strong>Hatch Patch Creations</strong> and the  <em>songs</em> by <strong>Judy Hatch</strong>.</p>
+<p>Copyright &copy;<script>document.write(/\d{4}/.exec(Date())[0])</script> </p>
