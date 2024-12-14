@@ -1,3 +1,10 @@
+<?php
+require __DIR__ . '/vendor/autoload.php';
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__ . '/');
+$dotenv->load();
+// print_r($_ENV);
+// die();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,7 +84,7 @@ html,body {
 <div class="w3-main" style="margin-left:250px">
 
   <div class="w3-row w3-padding-64">
-    <!-- <div class="w3-col"><img src="logo.gif" alt="" srcset=""></div> -->
+    <!-- <div class="w3-col"><img src="images/logo.gif" alt="" srcset=""></div> -->
     
     <div class="w3-col w3-container">
 <table id="example" class="display dataTable responsive w3-table" style="width: 100%">
@@ -89,10 +96,10 @@ html,body {
       </thead>
       <tbody>
         <?php
-$user = "";
-$server = "";
-$password = "";
-$dbname = "";
+$user = $_ENV['DBUSER'];
+$server = $_ENV['SERVER'];
+$password = $_ENV['PASSWORD'];
+$dbname = $_ENV['DBNAME'];
 $file_path = 'https://raw.githubusercontent.com/sher1/hatchpatch/ab8d06a30f66950ab1c081c41e5fac7674aa1cfd';
 $pdo = new \PDO("mysql:host=$server;dbname=$dbname", $user, $password);
 $result = $pdo->query("SELECT * FROM songs");
