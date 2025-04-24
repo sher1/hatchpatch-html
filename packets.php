@@ -10,6 +10,17 @@ $dotenv->load();
   <title>Hatch Patch Creations Family Home Evening Packets</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KMLN78DL');</script>
+<!-- End Google Tag Manager -->
+
+  
   <link rel="stylesheet" href="css/w3.css">
   <link rel="stylesheet" href="css/w3-theme-teal.css">
   <!-- Google Fonts for Purple Purse-->
@@ -65,6 +76,14 @@ $dotenv->load();
 </head>
 
 <body>
+
+      
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KMLN78DL"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  
+  
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
@@ -183,6 +202,15 @@ $dotenv->load();
   $pdo = null;
   $result = null;
   ?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-L63X4CS6CB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-L63X4CS6CB');
+</script>
 </body>
 
 </html>
